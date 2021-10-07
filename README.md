@@ -45,6 +45,7 @@ The first step is cloning the repository. After that, be sure that the URL of yo
 
 After that, you are ready to go, so launch the ```setup.sh``` script inside ```cluster-setup``` folder (enter in inside
 the folder before). This script will install everything needed.
+_The script will ask for the root password in order to install K3d_
 
 If everything goes well, you will be able to access to ```argo.localhost:8080``` (the script will print needed
 credentials), and to ```labster-app.localhost:8080``` with you application up and running.
@@ -52,6 +53,9 @@ credentials), and to ```labster-app.localhost:8080``` with you application up an
 Once everything is running, just make changes inside your app and execute ```npm run deploy {version}``` where version
 is any valid tag that you want. Semantic versioning (ex. 1.0.1) is heavily encouraged though. This will automatically
 update the application in kubernetes.
+
+Besides, k3d provides a fully operative kubernetes cluster, and the script has configured the access to it, so, if you 
+want to play with it, just run ```kubectl get pods -A``` or the kubectl command that you want.
 
 ## What is happening under the hood?
 ```setup.sh``` Script install K3d with several addons like Docker registry, ArgoCD (that implies a lot of kubernetes
