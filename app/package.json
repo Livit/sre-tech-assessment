@@ -1,0 +1,14 @@
+{
+  "name": "labster-hello",
+  "version": "0.1.0",
+  "description": "Node.js labster-hello-world",
+  "author": "Daniel",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "deploy": "./deploy.sh"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
