@@ -9,6 +9,7 @@ spec:
   sourceRepos:
     - "https://github.com/jdaniel-garcia/labster-test.git"
     - "https://github.com/Livit/sre-tech-assessment.git"
+    - "https://github.com/jdaniel-garcia/sre-tech-assessment.git"
   destinations:
     - namespace: dev
       server: https://kubernetes.default.svc
