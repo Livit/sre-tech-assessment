@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: development
+  labels:
+    app: development
+spec:
+  description: Dev ArgoCD Project to deploy our app locally
+  sourceRepos:
+    - "https://github.com/jdaniel-garcia/labster-test.git"
+    - "https://github.com/Livit/sre-tech-assessment.git"
+  destinations:
+    - namespace: dev
+      server: https://kubernetes.default.svc
+  # Enables namespace orphaned resource monitoring.
+  orphanedResources:
+    warn: false
