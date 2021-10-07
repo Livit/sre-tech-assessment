@@ -1,0 +1,13 @@
+labster-hello-world:
+  replicaCount: 3
+
+  image:
+    repository: k3d-registry.localhost:5000/labster-hello-world
+    pullPolicy: Always
+    tag: "latest"
+
+  ingress:
+    enabled: true
+
+    annotations:
+      kubernetes.io/ingress.class: nginx
