@@ -7,7 +7,6 @@ metadata:
 spec:
   description: Dev ArgoCD Project to deploy our app locally
   sourceRepos:
-    - "https://github.com/jdaniel-garcia/labster-test.git"
     - "https://github.com/Livit/sre-tech-assessment.git"
     - "https://github.com/jdaniel-garcia/sre-tech-assessment.git"
   destinations:

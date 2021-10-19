@@ -10,7 +10,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: chart
-    repoURL: 'https://github.com/jdaniel-garcia/labster-test.git'
+    repoURL: 'https://github.com/jdaniel-garcia/sre-tech-assessment'
     targetRevision: HEAD
     helm:
       valueFiles:
